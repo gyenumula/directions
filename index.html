@@ -17,9 +17,9 @@
 		<script>
 			L.mapbox.accessToken = 'pk.eyJ1IjoiZ29waWNoYW5kIiwiYSI6Imk1cV90S0UifQ.qb3G3DMyLEnWrL-hyiIhUw';
 			var map = L.mapbox.map('map', 'gopichand.dca35fef')
-			/*var featureLayer = L.mapbox.featureLayer()
-    			.loadURL('blr_parks.geojson')
-    			.addTo(map);*/
+			var featureLayer = L.mapbox.featureLayer()
+    			.loadURL('directions.json')
+    			.addTo(map);
 		</script>
 	</body>
 </html>
