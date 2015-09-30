@@ -19,9 +19,11 @@
 			L.mapbox.accessToken = 'pk.eyJ1IjoiZ29waWNoYW5kIiwiYSI6Imk1cV90S0UifQ.qb3G3DMyLEnWrL-hyiIhUw';
 			var map = L.mapbox.map('map', 'gopichand.dca35fef');
 			map.scrollWheelZoom.disable();
-			var featureLayer = L.mapbox.featureLayer()
-    			.loadURL('route.geojson')
+			var routeLayer = L.mapbox.featureLayer()
+    			.loadURL('./route.geojson')
     			.addTo(map);
+    			
+    			map.fitBounds(routeLayer.getBounds());
 		</script>
 	</body>
 </html>
